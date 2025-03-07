@@ -1,13 +1,9 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        tuna tunaObject = new tuna();
+        birth birObject = new birth(3,1,2005);
+        mid midObject = new mid("Xuan", birObject);
 
-        System.out.println("Enter your name here:");
-        String name = input.nextLine();
-        tunaObject.simpleMessage(name);
+        System.out.println(midObject);
     }
 }
